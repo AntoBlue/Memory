@@ -165,11 +165,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        //Debug
-
+        ////Debug
+        
+        //insta win
         if (Input.GetKeyDown(KeyCode.A))
         {
-            pairs = 0;
+            winUI.SetActive(true);
+            winUI.GetComponent<AudioSource>().Play();
         }
     }
 
